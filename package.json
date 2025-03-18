@@ -1,0 +1,34 @@
+{
+  "name": "secure-storage",
+  "version": "1.0.0",
+  "description": "Secure storage implementation using Web Crypto API",
+  "main": "dist/secure-storage.cjs.js",
+  "module": "dist/secure-storage.esm.js",
+  "browser": "dist/secure-storage.umd.js",
+  "types": "dist/types/SecureStorage.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "security",
+    "encryption",
+    "storage",
+    "web-crypto",
+    "indexeddb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.12.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^25.0.7"
+  },
+  "files": [
+    "dist"
+  ]
+}
